@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Users, Calendar, TrendingUp, ClipboardList } from "lucide-react"
 import { motion } from "framer-motion"
 import { slideUp, staggerContainer } from "../animations"
@@ -175,9 +176,12 @@ export default function TPQPCohort() {
               className="mt-14 flex justify-center"
             >
 
-              <button className="bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-4 rounded-lg font-medium transition hover:scale-105 shadow-[0_0_40px_rgba(16,185,129,0.35)]">
+              <Link
+                href="/apply"
+                className="bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-4 rounded-lg font-medium transition hover:scale-105 shadow-[0_0_40px_rgba(16,185,129,0.35)]"
+              >
                 Apply For Cohort 01
-              </button>
+              </Link>
 
             </motion.div>
 

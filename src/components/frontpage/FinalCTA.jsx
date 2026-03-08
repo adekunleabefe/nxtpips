@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { slideUp } from "../animations"
 
@@ -45,15 +46,22 @@ export default function FinalCTA() {
               Only <span className="text-emerald-400 font-medium">30 traders</span> will be selected for Cohort 01
             </p>
 
+            {/* Buttons */}
             <div className="mt-10 flex justify-center gap-4 flex-wrap">
 
-              <button className="bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-4 rounded-lg font-medium transition shadow-[0_0_40px_rgba(16,185,129,0.35)] hover:shadow-[0_0_60px_rgba(16,185,129,0.45)]">
+              <Link
+                href="/apply"
+                className="bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-4 rounded-lg font-medium transition shadow-[0_0_40px_rgba(16,185,129,0.35)] hover:shadow-[0_0_60px_rgba(16,185,129,0.45)]"
+              >
                 Apply For Cohort 01
-              </button>
+              </Link>
 
-              <button className="border border-white/10 hover:border-white px-10 py-4 rounded-lg transition hover:bg-white/5">
+              <Link
+                href="/tpqp"
+                className="border border-white/10 hover:border-white px-10 py-4 rounded-lg transition hover:bg-white/5"
+              >
                 View Program Details
-              </button>
+              </Link>
 
             </div>
 

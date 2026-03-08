@@ -65,7 +65,7 @@ export default function Hero() {
             className="mt-10 flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#apply"
+              href="/apply"
               className="bg-emerald-500 hover:bg-emerald-600 text-black px-8 py-4 rounded-lg font-medium transition shadow-[0_0_40px_rgba(16,185,129,0.35)] text-center"
             >
               Apply For TPQP

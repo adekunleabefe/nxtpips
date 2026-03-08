@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { UserPlus, LineChart, Wallet } from "lucide-react"
 import { motion } from "framer-motion"
 import { slideUp, staggerContainer } from "../animations"
@@ -145,17 +146,17 @@ export default function HowItWorks() {
           className="text-center mt-20"
         >
 
-          <a
-            href="#apply"
+          <Link
+            href="/apply"
             className="inline-block bg-emerald-500 hover:bg-emerald-600 text-black px-8 py-4 rounded-lg font-medium transition shadow-[0_0_40px_rgba(16,185,129,0.35)]"
           >
             Start Your Evaluation
-          </a>
+          </Link>
 
         </motion.div>
 
       </div>
 
     </section>
-  );
+  )
 }
